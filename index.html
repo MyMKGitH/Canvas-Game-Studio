@@ -641,7 +641,9 @@ function renderPreview(container, type){
 class AudioEngine {
   constructor(){
     this.ctx = null;
-    this.musicOsc = null;
+    this.bgMusic = new Audio('music.mp3');
+    this.bgMusic.loop = true;
+    this.bgMusic.volume = 0.2;
   }
   ensure(){
     if(!this.ctx) this.ctx = new (window.AudioContext || window.webkitAudioContext)();
@@ -670,18 +672,11 @@ class AudioEngine {
   }
   playMusic(){
     if(!game || !game.settings || !game.settings.music) return;
-    this.ensure();
-    if(this.musicOsc) return;
-    this.musicOsc = this.ctx.createOscillator();
-    const g = this.ctx.createGain();
-    this.musicOsc.type = 'sawtooth';
-    this.musicOsc.frequency.value = 110;
-    g.gain.value = 0.02;
-    this.musicOsc.connect(g); g.connect(this.ctx.destination);
-    this.musicOsc.start();
+    this.bgMusic.play().catch(e => console.log("Audio waiting for user interaction"));
   }
   stopMusic(){
-    if(this.musicOsc){ this.musicOsc.stop(); this.musicOsc.disconnect(); this.musicOsc = null; }
+    this.bgMusic.pause();
+    this.bgMusic.currentTime = 0;
   }
 }
 

@@ -31,3 +31,5 @@ A lightweight, browser-based game engine built to showcase **real-time interacti
 .
 ├── index.html        # Complete application (UI, CSS styles & JS game logic)
 └── README.md         # Project documentation
+
+[![DOI](https://zenodo.org/badge/1318414148.svg)](https://doi.org/10.5281/zenodo.21723782)

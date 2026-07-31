@@ -2,7 +2,7 @@
 
 A lightweight, browser-based game engine built to showcase **real-time interactive game logic**, **state management**, and **2D canvas rendering** — all in a single, zero-dependency bundle.  
 
-🚀 Live Demo: [Play the Game Online](https://<YOUR-GITHUB-USERNAME>.github.io/<YOUR-REPO-NAME>/)  
+🚀 Live Demo: [Play the Game Online](https://mymkgith.github.io/Canvas-Game-Studio/)  
 
 ---
 

@@ -34,3 +34,4 @@ A lightweight, browser-based game engine built to showcase **real-time interacti
 
 ```
 [![DOI](https://zenodo.org/badge/1318414148.svg)](https://doi.org/10.5281/zenodo.21723782)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Canvas%20Game%20Studio-181717?style=for-the-badge&logo=github&logoColor=white)](https://mymkgith.github.io/Canvas-Game-Studio)
